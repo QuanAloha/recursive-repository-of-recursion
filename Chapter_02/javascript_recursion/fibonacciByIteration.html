@@ -1,0 +1,18 @@
+<script type="text/javascript">
+    function fibonacci(nthNumber) {
+        let a = 1;
+        let b = 1;
+
+        document.write('a is ' + a + ' and b is ' + b + '<br/>');
+        for (let i = 1; i < nthNumber; i++) {
+            let temp = a;
+            a = b;
+            b = temp + a;
+            document.write('a is ' + a + ' and b is ' + b + '<br/>');
+        }
+
+        return a;
+    }
+
+    document.write(fibonacci(10))
+</script>
